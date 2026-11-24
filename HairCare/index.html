@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHAMPOO CARE | ดูแลเส้นผมทุกวัน</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#home">✿ SHAMPOO CARE</a><nav><a href="#products">สินค้า</a><a href="#order">สั่งซื้อ</a><a href="#admin">จัดการออเดอร์</a></nav></header>
+<main>
+<section class="hero" id="home"><div><p class="eyebrow">CARE FOR YOUR HAIR</p><h1>ผมนุ่มสวย<br><span>เริ่มต้นที่การดูแล</span></h1><p>แชมพูสูตรอ่อนโยน ทำความสะอาดเส้นผม พร้อมดูแลหนังศีรษะในทุกวัน</p><a class="btn" href="#products">เลือกซื้อสินค้า</a></div><div class="hero-art"><div class="circle"></div><img src="assets/shampoo-green.svg" alt="แชมพู SHAMPOO CARE"></div></section>
+<section class="section" id="products"><p class="eyebrow">OUR PRODUCTS</p><h2>เลือกสูตรที่ใช่สำหรับคุณ</h2><div class="products">
+<article class="product"><img src="assets/shampoo-green.svg" alt="สูตรอ่อนโยน"><div class="product-info"><span class="tag">SKU: SC001</span><h3>Herbal Fresh Shampoo</h3><p>สูตรสมุนไพร กลิ่นสดชื่น เหมาะสำหรับใช้เป็นประจำ</p><strong>฿159</strong><button class="btn add" data-sku="SC001">เลือกสินค้านี้</button></div></article>
+<article class="product"><img src="assets/shampoo-pink.svg" alt="สูตรบำรุงผม"><div class="product-info"><span class="tag">SKU: SC002</span><h3>Silky Smooth Shampoo</h3><p>สูตรบำรุงผม ช่วยให้ผมนุ่มลื่น จัดทรงง่าย</p><strong>฿189</strong><button class="btn add" data-sku="SC002">เลือกสินค้านี้</button></div></article>
+</div></section>
+<section class="section order-section" id="order"><div><p class="eyebrow">PLACE YOUR ORDER</p><h2>สั่งซื้อสินค้า</h2><p>กรอกข้อมูลให้ครบถ้วน เพื่อให้เราจัดส่งสินค้าได้ถูกต้อง</p></div><form id="orderForm"><label>สินค้า<select id="sku" required><option value="SC001">Herbal Fresh Shampoo — ฿159</option><option value="SC002">Silky Smooth Shampoo — ฿189</option></select></label><label>จำนวน<input id="qty" type="number" min="1" value="1" required></label><label>ชื่อ-นามสกุล<input id="customer" required placeholder="ชื่อผู้รับพัสดุ"></label><label>เบอร์โทรศัพท์<input id="phone" required inputmode="tel" placeholder="08XXXXXXXX"></label><label>ที่อยู่จัดส่ง<textarea id="address" rows="3" required placeholder="บ้านเลขที่ ถนน ตำบล อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label><label>หมายเหตุ (ถ้ามี)<input id="note" placeholder="รายละเอียดเพิ่มเติม"></label><div class="total" id="total">ยอดรวม ฿159</div><button class="btn" type="submit">ยืนยันคำสั่งซื้อ</button><p id="orderMsg" class="message"></p></form></section>
+<section class="section admin" id="admin"><p class="eyebrow">FULFILLMENT</p><h2>จัดการคำสั่งซื้อ / หยิบและแพ็คสินค้า</h2><p class="muted">ใส่ Web App URL ในไฟล์ app.js ก่อนใช้งานระบบ Google Sheets</p><button class="btn secondary" id="refresh">โหลดรายการคำสั่งซื้อ</button><div id="orders" class="orders"><p>ยังไม่ได้โหลดรายการ</p></div></section>
+</main><footer>© 2026 SHAMPOO CARE · Student project</footer><script src="app.js"></script>
+</body></html>
